@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="_buttonFacebookConnect" destination="67" id="69"/>
+                <outlet property="_imgTest" destination="71" id="72"/>
+                <outlet property="btnSend" destination="23" id="48"/>
+                <outlet property="btnSwLogin" destination="41" id="43"/>
+                <outlet property="btnSwRegister" destination="38" id="44"/>
+                <outlet property="buttonForgotPassword" destination="31" id="32"/>
+                <outlet property="containerView" destination="63" id="64"/>
+                <outlet property="limgEmail" destination="52" id="54"/>
+                <outlet property="limgPassword" destination="51" id="55"/>
+                <outlet property="limgUsername" destination="50" id="56"/>
+                <outlet property="textEmail" destination="21" id="26"/>
+                <outlet property="textPassword" destination="18" id="25"/>
+                <outlet property="textUserName" destination="7" id="24"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outletCollection property="allTextFields" destination="21" id="62"/>
+                <outletCollection property="allTextFields" destination="18" id="61"/>
+                <outletCollection property="allTextFields" destination="7" id="60"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_login_screen.png" id="45">
+                    <rect key="frame" x="0.0" y="17" width="320" height="500"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="17" maxX="0.0" maxY="-17"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="63" userLabel="View - container">
+                    <rect key="frame" x="0.0" y="55" width="320" height="206"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <userGuides>
+                        <userLayoutGuide location="88" affinity="minY"/>
+                    </userGuides>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="lab-E-mail.png" id="52">
+                            <rect key="frame" x="35" y="151" width="250" height="22"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" id="21" userLabel="Text Field - email">
+                            <rect key="frame" x="35" y="175" width="250" height="31"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done"/>
+                            <connections>
+                                <action selector="actTextDidChange:" destination="-1" eventType="editingChanged" id="59"/>
+                                <outlet property="delegate" destination="-1" id="22"/>
+                            </connections>
+                        </textField>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="lab-Password.png" id="51">
+                            <rect key="frame" x="35" y="93" width="250" height="22"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" id="18" userLabel="Text Field - password">
+                            <rect key="frame" x="35" y="115" width="250" height="31"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="actTextDidChange:" destination="-1" eventType="editingChanged" id="58"/>
+                                <outlet property="delegate" destination="-1" id="19"/>
+                            </connections>
+                        </textField>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="lab-User-Name.png" id="50">
+                            <rect key="frame" x="35" y="34" width="250" height="22"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" id="7" userLabel="Text Field - username">
+                            <rect key="frame" x="35" y="57" width="250" height="31"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
+                            <connections>
+                                <action selector="actTextDidChange:" destination="-1" eventType="editingChanged" id="57"/>
+                                <outlet property="delegate" destination="-1" id="9"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="67">
+                            <rect key="frame" x="80" y="175" width="159" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="_LoginWithFacebookNormal.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="_LoginWithFacebookPressed.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonFacebookPressed" destination="-1" eventType="touchUpInside" id="70"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="17" maxX="0.0" maxY="-17"/>
+                </view>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bar-top-navigation.png" id="53">
+                    <rect key="frame" x="0.0" y="17" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="19" maxX="0.0" maxY="-19"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="38" userLabel="Button - register">
+                    <rect key="frame" x="70" y="24" width="90" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="19" maxX="0.0" maxY="-19"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn-LRegister-1.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn-LRegister-0.png"/>
+                    <state key="highlighted" backgroundImage="btn-LRegister-0.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actSwLoginRegister:" destination="-1" eventType="touchDown" id="40"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="41" userLabel="Button - login">
+                    <rect key="frame" x="160" y="24" width="90" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="19" maxX="0.0" maxY="-19"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn-LLogin-1.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn-LLogin-0.png"/>
+                    <state key="highlighted" backgroundImage="btn-LLogin-0.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actSwLoginRegister:" destination="-1" eventType="touchDown" id="42"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="23" userLabel="Button - OK">
+                    <rect key="frame" x="131" y="298" width="70" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="19" maxX="0.0" maxY="-19"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn-Ok.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonOkPressed" destination="-1" eventType="touchUpInside" id="28"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="31">
+                    <rect key="frame" x="65" y="369" width="190" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="25" maxX="0.0" maxY="-25"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" backgroundImage="btn-Forgot-Password.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actForgotPwd:" destination="-1" eventType="touchUpInside" id="46"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="71">
+                    <rect key="frame" x="220" y="298" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="19" maxX="0.0" maxY="-19"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="_LoginWithFacebookNormal.png" width="159" height="29"/>
+        <image name="_LoginWithFacebookPressed.png" width="159" height="29"/>
+        <image name="bar-top-navigation.png" width="4" height="44"/>
+        <image name="bg_login_screen.png" width="320" height="480"/>
+        <image name="btn-Forgot-Password.png" width="190" height="40"/>
+        <image name="btn-LLogin-0.png" width="90" height="31"/>
+        <image name="btn-LLogin-1.png" width="90" height="31"/>
+        <image name="btn-LRegister-0.png" width="90" height="31"/>
+        <image name="btn-LRegister-1.png" width="90" height="31"/>
+        <image name="btn-Ok.png" width="70" height="40"/>
+        <image name="lab-E-mail.png" width="64" height="22"/>
+        <image name="lab-Password.png" width="97" height="22"/>
+        <image name="lab-User-Name.png" width="106" height="22"/>
+    </resources>
+</document>

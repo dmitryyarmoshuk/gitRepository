@@ -1,0 +1,45 @@
+//
+// Prefix header for all source files of the 'Peek' target in the 'Peek' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+	#import <MapKit/MapKit.h>
+
+	#import <CoreLocation/CoreLocation.h>
+	#import "ASIFormDataRequest.h"
+
+	#import "PeekAppDelegate.h"
+
+//	ZVeqtr Cocoa categories
+#import "NSDictionary+ZVeqtr.h"
+#import "NSURL+ZVeqtr.h"
+#import "UIImage+ZVeqtr.h"
+#import "NSString+ZVeqtr.h"
+#import "NSData+ZVeqtr.h"
+//	common
+#import "ZSuperViewController.h"
+#import "FBShareUtils.h"
+
+
+#define APP_DLG ((PeekAppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
+#endif
+
+
+//#define SETTING_KEY_FACEBOOK_LOGIN      @"SETTING_KEY_FACEBOOK_LOGIN"
+//#define SETTING_KEY_FACEBOOK_PASSWORD   @"SETTING_KEY_FACEBOOK_PASSWORD"
+//#define SETTING_KEY_IS_FACEBOOK_LOGIN   @"SETTING_KEY_IS_FACEBOOK_LOGIN"
+
+
+#ifdef DEBUG
+#	define  NLog(fmt, ...) NSLog((@"%s " fmt), __FUNCTION__, ##__VA_ARGS__);
+#	define  LLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#	define  NLog(...)
+#	define  LLog(...)
+#endif
+

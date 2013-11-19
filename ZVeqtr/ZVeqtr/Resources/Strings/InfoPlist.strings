@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleDisplayName = "Veqtr";
+NSHumanReadableCopyright = "My Company Inc.";

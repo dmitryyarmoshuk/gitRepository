@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>facebookPermissions</key>
+	<array>
+		<string>read_stream</string>
+		<string>offline_access</string>
+		<string>read_friendlists</string>
+		<string>user_relationships</string>
+		<string>user_likes</string>
+		<string>user_about_me</string>
+		<string>user_birthday</string>
+		<string>user_activities</string>
+		<string>friends_relationships</string>
+		<string>user_relationship_details</string>
+		<string>friends_relationship_details</string>
+		<string>friends_birthday</string>
+		<string>user_videos</string>
+		<string>video_upload</string>
+	</array>
+</dict>
+</plist>

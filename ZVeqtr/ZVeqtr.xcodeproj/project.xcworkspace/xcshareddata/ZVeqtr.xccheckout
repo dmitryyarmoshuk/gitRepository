@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4987266E-3EAF-49DD-BBA6-E02E1D2EB7AC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZVeqtr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F8CC6DE-D650-4347-94CE-252101D56860</key>
+		<string>https://svn.softmix.by/svn/Mobile/iOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZVeqtr/ZVeqtr.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F8CC6DE-D650-4347-94CE-252101D56860</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>6F8CC6DE-D650-4347-94CE-252101D56860</key>
+		<string>https://svn.softmix.by/svn/Mobile</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://svn.softmix.by/svn/Mobile/iOS/ZVeqtr/ZVeqtr.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F8CC6DE-D650-4347-94CE-252101D56860</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F8CC6DE-D650-4347-94CE-252101D56860</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

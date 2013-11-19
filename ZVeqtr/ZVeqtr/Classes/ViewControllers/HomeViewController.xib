@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="buttonMail" destination="27" id="29"/>
+                <outlet property="buttonText" destination="28" id="30"/>
+                <outlet property="customBadgeMessageCenter" destination="62" id="64"/>
+                <outlet property="mapView" destination="7" id="9"/>
+                <outlet property="searchBar" destination="79" id="82"/>
+                <outlet property="searchDisplayController" destination="QFt-qn-02M" id="gMU-d9-JR2"/>
+                <outlet property="searchSpinner" destination="42" id="44"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <userGuides>
+                <userLayoutGuide location="88" affinity="minY"/>
+            </userGuides>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bar-top-navigation.png" id="83">
+                    <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="22" maxX="0.0" maxY="-22"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="white" id="42">
+                    <rect key="frame" x="150" y="220" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5" customClass="ZTexturedToolbar">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem image="icon_setting.png" id="6" userLabel="Bar Button Item - sett">
+                            <connections>
+                                <action selector="actGotoSettings" destination="-1" id="36"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem image="icon_mail.png" id="27" userLabel="Bar Button Item - envelop">
+                            <connections>
+                                <action selector="actMail" destination="-1" id="37"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" title="Text" id="28">
+                            <connections>
+                                <action selector="actText" destination="-1" id="38"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="60">
+                            <view key="customView" contentMode="scaleToFill" id="59">
+                                <rect key="frame" x="126" y="6" width="30" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="61">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="icon_message_center.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actMessageCenter" destination="-1" eventType="touchUpInside" id="63"/>
+                                        </connections>
+                                    </button>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" id="62" customClass="CustomBadge">
+                                        <rect key="frame" x="15" y="0.0" width="15" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="13"/>
+                        <barButtonItem systemItem="action" id="14">
+                            <connections>
+                                <action selector="actionMenuSheet:" destination="-1" id="45"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="7">
+                    <rect key="frame" x="0.0" y="66" width="320" height="458"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <gestureRecognizers/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="22" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="10"/>
+                        <outletCollection property="gestureRecognizers" destination="66" appends="YES" id="67"/>
+                    </connections>
+                </mapView>
+                <searchBar contentMode="redraw" showsBookmarkButton="YES" id="79">
+                    <rect key="frame" x="0.0" y="22" width="272" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="22" maxX="0.0" maxY="-22"/>
+                    <color key="tintColor" red="0.13508145529999999" green="0.22260486539999999" blue="0.61808434310000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Location</string>
+                        <string>Hashtags</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="80"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="84" userLabel="Button - login">
+                    <rect key="frame" x="280" y="29" width="29" height="29"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="22" maxX="0.0" maxY="-22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                    <state key="normal" image="icon_clock.png">
+                        <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actTimefilter" destination="-1" eventType="touchUpInside" id="85"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <tapGestureRecognizer numberOfTouchesRequired="3" id="66">
+            <connections>
+                <action selector="tap_Action:" destination="-1" id="68"/>
+            </connections>
+        </tapGestureRecognizer>
+        <searchBar contentMode="redraw" id="MO3-y8-XiY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <textInputTraits key="textInputTraits"/>
+            <connections>
+                <outlet property="delegate" destination="-1" id="GHm-zg-NPo"/>
+            </connections>
+        </searchBar>
+        <searchDisplayController id="QFt-qn-02M">
+            <connections>
+                <outlet property="delegate" destination="-1" id="ka4-Wb-uyQ"/>
+                <outlet property="searchBar" destination="MO3-y8-XiY" id="GDU-yr-6Ub"/>
+                <outlet property="searchContentsController" destination="-1" id="wXe-PA-8wC"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="7yM-If-L0G"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="v7Y-VA-Tcs"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="bar-top-navigation.png" width="4" height="44"/>
+        <image name="icon_clock.png" width="24" height="24"/>
+        <image name="icon_mail.png" width="24" height="24"/>
+        <image name="icon_message_center.png" width="30" height="30"/>
+        <image name="icon_setting.png" width="24" height="24"/>
+    </resources>
+</document>
